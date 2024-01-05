@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }  
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <h2>
+                Please fill out the form below:
+            </h2>
+            <form>
+                <label for="name">Your Name:
+                    <input id="name" type="text" placeholder="Your Name">
+                </label>
+                
+                <label for="email">Your Email:
+                    <input id="email" type="email" placeholder="Your Email">
+                </label>
+
+                <label for="phone">Your Phone:
+                    <input id="phone" type="tel" placeholder="Your Phone Number">
+                </label>
+                
+                <fieldset style="width: 200px; auto;">
+                    <legend>
+                        Pick one pitha:
+                    </legend>
+                    <label for="chitoi">
+                        <input id="chitoi" type="radio" name="pitha" value="Chitoi"> Chitoi
+                    </label>
+                    <label for="vapa">
+                        <input id="vapa" type="radio" name="pitha" value="Vapa"> Vapa
+                    </label>
+                    <label for="puli">
+                        <input id="puli" type="radio" name="pitha" value="Puli"> Puli
+                    </label>
+                    <label for="kusli">
+                        <input id="kusli" type="radio" name="pitha" value="Kusli"> Kusli
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset style="width: 200px;">
+                    <legend>Pick one or more vorta: </legend>
+                    <label for="aloo">
+                        <input id="aloo" type="checkbox" name="vorta" value="Aloo"> Aloo
+                    </label>
+                    <label for="begun">
+                        <input id="begun" type="checkbox" name="vorta" value="Begun"> Begun
+                    </label>
+                    <label for="kumro">
+                        <input id="kumro" type="checkbox" name="vorta" value="Kumro"> Kumro
+                    </label>
+                    <label for="lau">
+                        <input id="lau" type="checkbox" name="vorta" value="Lau"> Lau
+                    </label>
+                    <label for="Chilli">
+                        <input id="Chilli" type="checkbox" name="vorta" value="Chilli"> Chilli
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Special instruction</legend>
+                    <textarea name="instruction" id="" cols="30" rows="10" placeholder="Instruction"></textarea>
+                </fieldset>
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
