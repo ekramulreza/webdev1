@@ -1,0 +1,28 @@
+/* nav > ul > li > a {
+    /* color: #000000;
+    /* text-decoration: none; */
+    /* padding: 10px 15px; */
+    /* display: inline;* */
+    /* font-size: 1.2em; */
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    /* border-bottom: 1px solid #806868; */
+    /* transition: all 0.2s ease-in-out; */
+
+    nav > ul > li{
+        display: inline;
+        text-align: center; /* center the text; doesn't work */
+        text-decoration: none; /* remove underline; doesn't work here; must set in the anchor tag */
+        padding: 10px 15px;
+
+        }
+
+    nav li > a{
+            text-decoration: none;
+            text-align: center; /* center the text; doesn't work */
+        }
+    
+        footer{
+            margin-top: 30px;
+            text-align: center;
+        }
