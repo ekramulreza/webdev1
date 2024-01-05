@@ -1,0 +1,46 @@
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 10px;
+  padding: 5px;
+}
+nav li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #806868;
+  transition: all 0.2s ease-in-out;
+}
+nav li a:hover {
+  color: #ffffff;
+  background-color: #806868;
+}
+/* nav li a.active {
+  color: #ffffff;
+  background-color: #806868;
+} */
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: center;
+  padding: 5px;
+}
+th {
+  /* text-align: left; */
+  background-color: #4caf50;
+  font-style: italic;
+}
+tfoot {
+  background-color: #e99517;
+  font-style: monospace;
+}
