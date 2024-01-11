@@ -37,6 +37,8 @@
   <body>
     <header>
       <h1>Responsive Website</h1>
+    </header>
+    <main>
       <ol>
         <li>ViewPort Meta Tag</li>
         <li>CSS Relative Units (px, %, em, rem etc)</li>
@@ -67,18 +69,38 @@
           </ul>
         </li>
         <li>
-            Multiple Column Layout: column-count, column-gap, column-rule, column-rule-color, column-rule-style, column-rule-width, column-span, column-width
+          Multiple Column Layout: column-count, column-gap, column-rule,
+          column-rule-color, column-rule-style, column-rule-width, column-span,
+          column-width
         </li>
-        <li>
-            Menu Responsive - Need to use JavaScript 
-        </li>
+        <li>Menu Responsive - Need to use JavaScript</li>
       </ol>
-      <main>
-        <div class="image-container">
-          <div><img src="resources/4_3712x5568.jpg" alt="" /></div>
-          <div><img src="resources/IMG_2360.jpeg" alt="" /></div>
-        </div>
-      </main>
-    </header>
+
+      Difference between Grid and Flexbox:
+      <ul>
+        <li>Grid is two dimensional and Flexbox is one dimensional</li>
+        <li>Grid is for layout and Flexbox is for alignment</li>
+        <li>Grid is for page layout and Flexbox is for component layout</li>
+        <li>Grid is for larger layout and Flexbox is for smaller layout</li>
+      </ul>
+      Example boxes:
+      <div style="display: flex; justify-content: space-between; width: 100%">
+        <div style="width: 50%; background-color: red; height: 100px"></div>
+        <div style="width: 50%; background-color: green; height: 100px"></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; width: 100%">
+        <div style="background-color: red; height: 100px"></div>
+        <div style="background-color: green; height: 100px"></div>
+      </div>
+      <div style="display: flex; justify-content: space-between; width: 100%">
+        <div style="width: 50%; background-color: red; height: 100px"></div>
+        <div style="width: 50%; background-color: green; height: 100px"></div>
+      </div>
+
+      <div class="image-container">
+        <div><img src="resources/4_3712x5568.jpg" alt="" /></div>
+        <div><img src="resources/IMG_2360.jpeg" alt="" /></div>
+      </div>
+    </main>
   </body>
 </html>
