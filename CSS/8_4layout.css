@@ -1,0 +1,65 @@
+.header,
+.nav,
+.main,
+.sidebar,
+.advertise,
+.footer {
+  background-color: bisque;
+  border: 2px solid salmon;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* We'll name different grid areas to differentiate them*/
+
+.header {
+  grid-area: header; /* This is the name of the grid area */
+}
+.nav {
+  grid-area: nav;
+}
+.main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.advertise {
+  grid-area: advertise;
+}
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header header header header"
+    "nav main main sidebar"
+    "nav main main advertise"
+    "footer footer footer footer";
+}
+
+@media screen and (max-width:576px){
+    .container{
+        grid-template-areas: 
+        "header"
+        "advertise"
+        "nav"
+        "main"
+        "sidebar"
+        "footer"
+        ;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .container{
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "sidebar main main"
+        "advertise footer footer"
+        ;
+    }
+}
